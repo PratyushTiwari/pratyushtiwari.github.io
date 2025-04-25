@@ -3,7 +3,7 @@ title: "Ethnicity and Identity: Stability and Drivers"
 collection: publications
 category: workinprogress
 permalink: /publication/paper_identity_ethnicity
-excerpt: 'This paper is about fixing template issue #693.'
+excerpt:
 date: 
 venue: 
 paperurl: 
