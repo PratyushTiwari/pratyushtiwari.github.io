@@ -2,12 +2,12 @@
 title: "Majority Perceptions of Minority Groups: Economic Inequalities, Their Causes, and Policy Solutions"
 collection: publications
 category: workinprogress
-permalink: /publication/paper_misperceptions_polling
+permalink: /publications/paper_misperceptions_polling
 excerpt: 
 date: 
 venue: 
 slidesurl: 
-paperurl: 'http://academicpages.github.io/files/paper_misperceptions_polling.pdf'
+paperurl: 'http://pratyushtiwari.github.io/files/paper_misperceptions_polling.pdf'
 bibtexurl: 
 citation:
 ---
