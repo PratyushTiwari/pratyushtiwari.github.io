@@ -1,5 +1,5 @@
 ---
-title: "New Party Introduction and Strategic Voting: Theory and Evidence from India \hfill \textit{with Amol Singh Raswan} \\ [1em]"
+title: "New Party Introduction and Strategic Voting: Theory and Evidence from India"
 collection: workinprogress
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
