@@ -1,7 +1,7 @@
 ---
-title: "Paper Title Number 3"
+title: "Housing Consumption and the Cost of Remote Work"
 collection: publications
-category: manuscripts
+category: workingpapers
 permalink: /publication/paper_housing
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2015-10-01
