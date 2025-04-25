@@ -4,10 +4,10 @@ collection: publications
 category: workingpapers
 permalink: /publication/paper_misperceptions_polling
 excerpt: 
-date: 2009-10-01
+date: 
 venue: 
 slidesurl: 
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+paperurl: 'http://academicpages.github.io/files/paper_misperceptions_polling.pdf'
 bibtexurl: 
 citation:
 ---
