@@ -2,7 +2,7 @@
 title: "New Party Introduction and Strategic Voting: Theory and Evidence from India"
 collection: workinprogress
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/paper_new_party
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2010-10-01
 venue: 'Journal 1'
