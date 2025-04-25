@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 4"
+title: "Ethnicity and Identity: Stability and Drivers"
 collection: publications
 category: workinprogress
 permalink: /publication/paper_identity_ethnicity
