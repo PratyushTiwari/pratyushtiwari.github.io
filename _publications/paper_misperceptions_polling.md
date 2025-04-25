@@ -1,7 +1,7 @@
 ---
 title: "Majority Perceptions of Minority Groups: Economic Inequalities, Their Causes, and Policy Solutions"
 collection: publications
-category: workingpapers
+category: workinprogress
 permalink: /publication/paper_misperceptions_polling
 excerpt: 
 date: 
