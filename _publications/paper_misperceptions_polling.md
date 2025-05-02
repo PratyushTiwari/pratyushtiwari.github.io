@@ -3,7 +3,7 @@ title: "Majority Perceptions of Minority Groups: Economic Inequalities, Their Ca
 collection: publications
 category: workingpapers
 permalink: /publications/paper_misperceptions_polling
-date: 2025-04
+date: 2025-03-01
 paperurl: 'http://pratyushtiwari.github.io/files/paper_misperceptions_polling.pdf'
 coauthors: "Lucinda Platt, Imran Rasul"
 ---
