@@ -69,7 +69,7 @@
         
         <!-- Citation -->
         {% if post.citation %}
-          <p>{{ post.citation }}</p>
+          <p><strong>Citation:</strong> {{ post.citation }}</p>
         {% endif %}
       
       <!-- Handle category: workinprogress -->
@@ -110,7 +110,7 @@
         
         <!-- Citation -->
         {% if post.citation %}
-          <p>{{ post.citation }}</p>
+          <p><strong>Citation:</strong> {{ post.citation }}</p>
         {% endif %}
       
       <!-- Default handling for other publication types -->
@@ -125,9 +125,9 @@
         
         <!-- Default download link handling with original format -->
         {% if post.citation and post.paperurl %}
-          <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+          <p>Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
         {% elsif post.citation %}
-          <p>Recommended citation: {{ post.citation }}</p>
+          <p>Citation: {{ post.citation }}</p>
         {% elsif post.paperurl %}
           <p><a href="{{ post.paperurl }}">Download Paper</a></p>
         {% endif %}
