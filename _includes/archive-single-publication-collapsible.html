@@ -1,0 +1,105 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="list__item">
+  <article class="archive__item publication-accordion" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <!-- Clickable header that shows title, authors, date -->
+    <div class="publication-header" onclick="togglePublication(this)" style="cursor: pointer;">
+      <!-- Title -->
+      <h2 class="archive__item-title publication-title" itemprop="headline">
+        {{ title }}
+        <span class="accordion-icon">▼</span>
+      </h2>
+
+      <!-- Co-authors -->
+      {% if post.coauthors %}
+        <p class="page__meta publication-authors">With: {{ post.coauthors }}</p>
+      {% endif %}
+
+      <!-- Date (without "Published:" prefix) -->
+      {% if post.date %}
+        <p class="page__meta publication-date">{{ post.date | date: "%B %Y" }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Collapsible content (hidden by default) -->
+    <div class="publication-details" style="display: none; margin-top: 15px;">
+
+      <!-- Excerpt/Abstract -->
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% endif %}
+
+      <!-- Handle different categories -->
+      {% if post.category == 'workingpapers' %}
+        <!-- Download links -->
+        <p>
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}">Download paper</a>
+            {% if post.slideurl %} | {% endif %}
+          {% endif %}
+
+          {% if post.slideurl %}
+            <a href="{{ post.slideurl }}">Download slides</a>
+          {% endif %}
+        </p>
+
+        <!-- Citation -->
+        {% if post.citation %}
+          <p><strong>Citation:</strong> {{ post.citation }}</p>
+        {% endif %}
+
+      {% elsif post.category == 'workinprogress' %}
+        <!-- Download links (only slides) -->
+        {% if post.slideurl %}
+          <p><a href="{{ post.slideurl }}">Download slides</a></p>
+        {% endif %}
+
+      {% elsif post.category == 'manuscripts' %}
+        <!-- Venue information -->
+        {% if post.venue %}
+          <p><i>{{ post.venue }}</i></p>
+        {% endif %}
+
+        <!-- Download links -->
+        <p>
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}">Final draft</a>
+            {% if post.puburl %} | {% endif %}
+          {% endif %}
+
+          {% if post.puburl %}
+            <a href="{{ post.puburl }}">Published version</a>
+          {% endif %}
+        </p>
+
+        <!-- Citation -->
+        {% if post.citation %}
+          <p><strong>Citation:</strong> {{ post.citation }}</p>
+        {% endif %}
+
+      {% else %}
+        <!-- Default handling for other publication types -->
+        {% if post.venue %}
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% endif %}
+
+        <!-- Download link and citation -->
+        {% if post.citation and post.paperurl %}
+          <p>Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+        {% elsif post.citation %}
+          <p>Citation: {{ post.citation }}</p>
+        {% elsif post.paperurl %}
+          <p><a href="{{ post.paperurl }}">Download Paper</a></p>
+        {% endif %}
+      {% endif %}
+    </div>
+
+  </article>
+</div>

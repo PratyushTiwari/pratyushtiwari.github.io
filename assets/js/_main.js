@@ -2,6 +2,23 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
+// Publication accordion toggle function (global scope for onclick handler)
+function togglePublication(header) {
+  var $header = $(header);
+  var $details = $header.next('.publication-details');
+  var $icon = $header.find('.accordion-icon');
+
+  // Toggle the details visibility
+  $details.slideToggle(300, function() {
+    // Rotate the icon based on visibility
+    if ($details.is(':visible')) {
+      $icon.html('▲');
+    } else {
+      $icon.html('▼');
+    }
+  });
+}
+
 $(document).ready(function () {
   // detect OS/browser preference
   const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches
