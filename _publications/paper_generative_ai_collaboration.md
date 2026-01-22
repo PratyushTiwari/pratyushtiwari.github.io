@@ -1,5 +1,5 @@
 ---
-title: "Generative AI and the Transaction Costs of Collaboration: Evidence from Open Source Repositories"
+title: "Generative AI and Coordination Dynamics in Open Source Software"
 collection: publications
 category: workinprogress
 permalink: /publication/paper_generative_ai_collaboration
