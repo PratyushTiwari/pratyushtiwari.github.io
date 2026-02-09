@@ -22,8 +22,8 @@
         <p class="page__meta publication-authors">With: {{ post.coauthors }}</p>
       {% endif %}
 
-      <!-- Date (without "Published:" prefix) -->
-      {% if post.date %}
+      <!-- Date (without "Published:" prefix) - hide for work in progress -->
+      {% if post.date and post.category != 'workinprogress' %}
         <p class="page__meta publication-date">{{ post.date | date: "%B %Y" }}</p>
       {% endif %}
     </div>
