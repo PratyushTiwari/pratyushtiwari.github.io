@@ -43,6 +43,9 @@
           {% if post.paperurl %}
             <a href="{{ post.paperurl }}">Download paper</a>
             {% if post.slideurl %} | {% endif %}
+          {% else %}
+            <em>Draft available upon request</em>
+            {% if post.slideurl %} | {% endif %}
           {% endif %}
 
           {% if post.slideurl %}
