@@ -4,7 +4,7 @@ collection: publications
 category: workingpapers
 permalink: /publication/paper_housing
 date: 2021-02-01
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'https://pratyushtiwari.github.io/files/paper_RemoteWorkHousing.pdf'
 citation: 'Stanton, Christopher T., and Pratyush Tiwari (2021). Housing consumption and the Cost of Remote Work. National Bureau of Economic Research Working Paper Series No. w28483'
 coauthors: "Chris Stanton"
 ---
