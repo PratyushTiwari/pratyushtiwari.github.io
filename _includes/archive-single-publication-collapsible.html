@@ -42,6 +42,7 @@
         <p>
           {% if post.paperurl %}
             <a href="{{ post.paperurl }}">Download paper</a>
+            {% if post.appendixurl %} | <a href="{{ post.appendixurl }}">Online Appendix</a>{% endif %}
             {% if post.slideurl %} | {% endif %}
           {% else %}
             <em>Draft available upon request</em>
